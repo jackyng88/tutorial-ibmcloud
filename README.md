@@ -215,7 +215,7 @@ When you first login to Ansible Automation Platform, you will need to register y
     ```shell
     export GH_USERNAME=<your_username>
 
-    podman run --name opa -d --publish 8181:8181 --restart always ghcr.io/${GH_USERNAME}/tutorial-ibmcloud-policies:main
+    podman run --name opa -d --publish 8080:8181 --restart always ghcr.io/${GH_USERNAME}/tutorial-ibmcloud-policies:main
     ```
 
 ## Configure Policy as Code Execution Environment
