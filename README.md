@@ -20,7 +20,7 @@ This tutorial assumes the user is running Mac OS environment, commands for Windo
     - [Add Ansible Automation Platform Credentials for Use in Playbooks](#add-ansible-automation-platform-credentials-for-use-in-playbooks)
     - [Create Policy as Code Project](#create-policy-as-code-project)
   - [Infrastructure as Code Deployment](#infrastructure-as-code-deployment)
-  - [Resource Auditing & Remediation](#resource-auditing--remediation)
+  - [Resource Auditing \& Remediation](#resource-auditing--remediation)
   - [Appendix](#appendix)
 
 ## TechZone VM Provisioning
@@ -382,7 +382,7 @@ The Terraform resources also contains a definition for an IBM Cloudant instance 
     **Variables:**
 
     ```yaml
-    policy_as_code_plan_validation_url: "http://<tz_aap_public_ip>:8181/v1/data/corp/policies"
+    policy_as_code_plan_validation_url: "http://<tz_aap_public_ip>:8080/v1/data/corp/policies"
     git_repo_https_clone_url: "https://github.com/<your_gh_username>/tutorial-ibmcloud.git"
     ```
 
@@ -484,7 +484,7 @@ The audit playbook will detect policy violations for running instances. Follow t
     **Variables:**
 
     ```yaml
-    policy_as_code_plan_validation_url: "http://<tz_aap_public_ip>:8181/v1/data/corp/policies"
+    policy_as_code_plan_validation_url: "http://<tz_aap_public_ip>:8080/v1/data/corp/policies"
     ```
 
     *Note: Update `<tz_aap_public_ip>` to the public IP of your Ansible Automation Platform instance*
